@@ -1,0 +1,415 @@
+/* https://images.unsplash.com/photo-1647456494292-65fb36fa8633?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80 */
+
+/* reset browswer default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: " poppins", sans-serif;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  #hero-wrapper {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.452), rgba(0, 0, 0, 0.452)), url("../assets/hans-ripa-F5J4QJqXQ98-unsplash.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    position: relative;
+  }
+  
+  .hero-wrapper-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 2;
+  }
+  
+  .profile-image {
+    width: 13%;
+    height: 13%;
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+  
+  .greeting{
+    color: #d48166;
+    font-size: 30px;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .full-name {
+    font-family: cursive;
+    color: #e6e2dd;
+    font-size: 25px;
+    text-transform: uppercase; /* changes letter*/
+    margin: 8px 0;
+  }
+  
+  .brief {
+    color: #d48166;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  /*icons*/
+  .hero-media-wrapper a svg {
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+    fill: #e6e2dd;
+    border: 1px solid #e6e2dd;
+    border-radius: 50%;
+    padding: 4px;
+    margin: 15px;
+    transition: 0.5s;
+  }
+  
+  .hero-media-wrapper svg:hover {
+    fill: #ffffff;
+    cursor: pointer;
+    position: relative;
+    bottom: 10px;
+  }
+  
+  .btn {
+    background-color: #d48166;
+    color: #e6e2dd;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 14px;
+    border-radius: 26px;
+    border: none;
+    margin: 15px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transform: 0.5s;
+  }
+  
+  .download-btn:hover {
+    opacity: 0.8;
+    background-color: #373a36;
+    color: #ffff;
+  }
+  
+  /* MAIN BODY CONTENT */
+  /* hamburger */
+  .hamburger{
+    display: none;
+  }
+  
+  /* menu icon */
+  .icon{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+  }
+  
+  h2{ 
+    text-transform: uppercase;
+    color:#c0c5be;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 20px;
+  }
+  
+  
+  
+  /* STACK SECTION*/
+  .stack-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    height: 25vh;
+  }
+  
+  /*chrome*/
+  .stack-title {
+    color: #eee;
+  }
+  .stack-progress::-webkit-progress-bar {
+    background-color: #eee;
+    border-radius: 100px;
+  }
+  
+  .stack-progress::-webkit-progress-value {
+    background-color: #d48166;
+    border-radius: 100px;
+  }
+  
+  /*firefox*/
+  .stack-progress::-moz-progress-bar {
+    background-color: #eee;
+    border-radius: 100px;
+  }
+  
+  /*IE10*/
+  .stack-progress {
+    color: #f9320a;
+    border-radius: 100px;
+  }
+  
+  .stack-progress-wrapper label {
+    display: block;
+  }
+  
+  
+  /* media query for small screen */
+  @media only screen and (max-width: 1200px){
+  #hero-wrapper{
+    height: 120vh;
+  }
+  
+  .hero-wrapper-content{
+    line-height: 3;
+  }
+  }
+  
+  
+  @media only screen and (max-width: 1024px){
+  #hero-wrapper{
+    height: 100vh;
+  }
+  
+  .hero-wrapper-content {
+    display: flex;
+    padding-top: 30px;
+    line-height: 4;
+  }
+  
+  .profile-image {
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  
+  .greeting{
+    font-size: 35px;
+  }
+  
+  .full-name{
+    font-size: 30px;
+  }
+  
+  .brief{
+    font-size: 40px;
+  }
+  
+  .hero-media-wrapper a svg{
+    width: 70px;
+    height: 70px;
+  }
+  
+  .btn{
+    font-size: 30px;
+  }
+  
+  .stack-group {
+    gap: 30px;
+    margin-bottom: 20px;
+  }
+  }
+  
+  
+  @media only screen and (max-width: 768px) {
+    .hamburger{
+      display: block;
+      cursor: pointer;
+      margin-right: 10px;
+    } 
+  
+    .hamburger.active .icon:nth-child(2){
+      opacity: 0;
+    }
+  
+    .hamburger.active .icon:nth-child(1){
+      transform: translateY(8px) rotate(45deg);
+    }
+  
+    .hamburger.active .icon:nth-child(3){
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  
+    .Links{
+      position: fixed;
+      left:-110%;
+      top: 45px;
+      gap: 0;
+      flex-direction: column;
+      background-color:#373a36;
+      width: 93%;
+      color: white;
+      text-align: center;
+      transition: 0.3s;
+    }
+  
+    .nav-item{
+      margin: 16px 0;
+    }
+  
+    .Links.active{
+      left: 0;
+    }
+  
+    #hero-wrapper {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.452),
+          rgba(0, 0, 0, 0.452)
+        ),
+        url("../assets/Snapchat-355398358.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      height: 100vh;
+    }
+  
+    .logo {
+      display:flex;
+      font-size: 20px;
+    }
+  
+  
+    .hero-wrapper-content {
+      display: flex;
+      padding-top: 30px;
+      line-height: 3.5;
+    }
+  
+    .profile-image {
+      display: none;
+    }
+  
+    .greeting{
+      margin-top: 30px;
+    }
+  
+    .full-name,
+    .brief {
+      font-size: 20px;
+    }
+  
+    .hero-media-wrapper a svg {
+      width: 40px;
+      height: 40px;
+      margin: 20px;
+    }
+  
+    .btn {
+      font-size: 20px;
+    }
+  
+    
+    .stack-progress {
+      width: 95%;
+    }
+  
+    .stack-group {
+      gap: 70px;
+      /* margin-bottom: 20px; */
+    }
+  
+  }
+  
+  
+  
+  @media only screen and (max-width: 480px) {
+    .hamburger {
+      display: block;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+  
+    .Links{
+      position: fixed;
+      left:-130%;
+      top: 45px;
+      gap: 0;
+      flex-direction: column;
+      background-color:#373a36;
+      width: 90%;
+      color: white;
+      text-align: center;
+      transition: 0.3s;
+    }
+  
+  
+    .logo {
+      display: flex;
+    }
+  
+    #hero-wrapper {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.452),
+          rgba(0, 0, 0, 0.452)
+        ),
+        url("../assets/Snapchat-748339387.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      height: 90vh;
+    }
+  
+    .hero-wrapper-content {
+      display: flex;
+      padding-top: 50px;
+      line-height: 5;
+    }
+  
+    .greeting{
+      font-size: 20px;
+    }
+  
+    .full-name {
+      font-size: 16px;
+    }
+  
+    .brief{
+      font-size: 18px;
+    }
+  
+    .hero-media-wrapper a svg {
+      width: 40px;
+      height: 40px;
+      margin: 20px;
+    }
+  
+    .btn {
+      font-size: 15px;
+    }
+  
+    h2 {
+      font-size: 15px;
+    }
+  
+    
+    .stack-progress {
+      width: 60%;
+    }
+  
+    .stack-group {
+      display: block;
+      line-height: 2;
+      margin-left: 7rem;
+    }
+  
+    .stack-section{
+      height: 50vh;
+    }
+  }
+  

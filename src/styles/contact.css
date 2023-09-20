@@ -1,0 +1,66 @@
+.sMedia {
+    color: #ccc;
+    font-size: 20px;
+}
+
+.sMedia:hover{
+    color: #d48166;
+}
+
+a{
+    text-decoration: none;
+}
+
+.connect-with-me{
+    height: 100vh;
+}
+  
+.contact-body{
+    background-color: dimgray ;
+}
+
+  /* SOCIAL MEDIA*/
+.social-account-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin-top: 100px;
+  }
+  
+  .social-account-wrapper svg {
+    width: 75px;
+    height: 75px;
+    fill: #d48166; /* either use color or fill*/
+  }
+  
+  .social-account-wrapper svg:hover {
+    fill: #ffff;
+    cursor: pointer;
+    position: relative;
+    bottom: 10px;
+  }
+
+  
+
+@media only screen and (max-width: 1100px){
+.connect-with-me{
+    height: 50vh;
+}
+    
+.social-account-wrapper{
+    margin-top: 10rem;
+    gap: 90px;
+}
+
+.social-account-wrapper svg {
+    width: 70px;
+    height: 70px;
+    fill: #d48166; /* either use color or fill*/
+}
+
+.sMedia{
+    font-size: 20px;
+}
+
+}

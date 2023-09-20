@@ -1,0 +1,135 @@
+.slideshow-container{
+    max-width: 800px;
+    position: relative;
+    left: 20%;
+    margin-top: .3rem;
+}
+
+.project-images{
+    width: 100%;
+}
+
+.slides{
+    display: none;
+    width: 100%;
+}
+
+img{
+    vertical-align: middle;
+}
+
+/* .prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color:#000;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover{
+    background-color: #c4c4c4;
+    width: fit-content;
+} */
+
+.text{
+    color: #eee;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+.numbertext{
+    color: #000;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.icon{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+
+
+/* media queries */
+@media only screen and (max-width: 1100px){
+.slideshow-container{
+    max-width: 700px;
+    position: relative;
+    left: 7%;
+    margin-top: 5rem;
+}
+
+.text{
+    font-size: 20px;
+    margin-top: 2rem;
+}
+}
+    
+
+
+@media only screen and (max-width: 768px) {
+.hamburger{
+    display: block;
+    cursor: pointer;
+    margin-right: 10px;
+} 
+
+.hamburger.active .icon:nth-child(2){
+    opacity: 0;
+}
+
+.hamburger.active .icon:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .icon:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.slideshow-container{
+    max-width: 520px;
+    position: relative;
+    margin-top: 1rem;
+}
+}
+
+
+@media only screen and (max-width: 480px) {
+.slideshow-container{
+    max-width: 310px;
+    position: relative;
+    margin-top: 7rem;
+}
+
+h2{
+    font-size: 14px;
+}
+
+.text{
+    font-size: 15px;
+}
+
+}

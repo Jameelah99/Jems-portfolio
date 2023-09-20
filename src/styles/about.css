@@ -1,0 +1,43 @@
+.about-body{
+    background-color: dimgray;
+    height: 90vh;
+}
+
+.about-brief {
+    text-align: center;
+    line-height: 2.5;
+    font-size: 23px;
+    color: #ffff;
+    padding: 17px;
+  }
+  
+
+
+/* media queries */
+@media only screen and (max-width: 1100px){
+.about-brief{
+    font-size: 25px;
+}
+}
+
+@media only screen and (max-width: 768px) {
+.about-brief{
+    line-height: 4;
+    font-size: 19px;
+    padding: 20px;
+}
+}
+
+
+@media only screen and (max-width: 480px){
+.about-brief {
+    line-height: 2.5;
+    font-size: 20px;
+    padding: 10px;
+}
+
+h2{
+    font-size: 20px;
+}
+
+}
