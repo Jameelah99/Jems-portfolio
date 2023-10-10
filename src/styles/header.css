@@ -1,52 +1,91 @@
-header{
-    background-color: #373a36;
-    position: sticky;
-    top: 0;
-    z-index: 1;
+header {
+  background-color: #373a36;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+/* header */
+.navlinks-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+/* logo */
+.logo {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #d48166;
+  margin-left: 50px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.Links {
+  display: flex;
+  margin-right: 50px;
+  gap: 3rem;
+  letter-spacing: 2px;
+}
+
+/* navlinks*/
+.navlink {
+  color: #ffff;
+  font-size: 30px;
+  font-weight: bold;
+  transition: 0.5s; /*makes content blink */
+}
+
+.navlink:hover {
+  color: #d48166;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+  .nav-item{
+    margin: 10px 0;
   }
-  
-  /* header */
-  .navlinks-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
+
+  .Links.active{
+    left: 0;
   }
-  
-  /* logo */
+
   .logo {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 30px;
-    font-weight: bold;
-    color: #d48166;
-    margin-left: 50px;
+    display:flex;
+    font-size: 20px;
+    margin-left: 10px;
   }
   
-  li{
-    list-style: none;
+}
+
+@media only screen and (max-width: 480px) {
+  .Links{
+    position: fixed;
+    left:-130%;
+    top: 45px;
+    gap: 0;
+    flex-direction: column;
+    background-color:#373a36;
+    width: 90%;
+    color: white;
+    text-align: center;
+    transition: 0.3s;
   }
-  
-  a{
-    text-decoration: none;
-  }
-  
-  .Links {
+
+
+  .logo {
     display: flex;
-    margin-right: 50px;
-    gap: 3rem;
-    letter-spacing: 2px;
+    margin-left: 25px;
   }
   
-  /* navlinks*/
-  .navlink {
-    color: #ffff;
-    font-size: 30px;
-    font-weight: bold;
-    transition: 0.5s; /*makes content blink */
-    /* padding: 5px; */
-    /* margin: 10px; */
-  }
-  
-  .navlink:hover{
-    color: #d48166;
-  }
+}

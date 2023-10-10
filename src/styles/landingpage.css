@@ -26,14 +26,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    line-height: 2;
+    line-height: 3.5;
   }
   
   .profile-image {
     width: 13%;
     height: 13%;
     border-radius: 50%;
-    margin-top: 30px;
+    margin-top: 70px;
     margin-bottom: 15px;
   }
   
@@ -102,76 +102,19 @@
   }
   
   /* MAIN BODY CONTENT */
-  /* hamburger */
-  .hamburger{
-    display: none;
-  }
-  
-  /* menu icon */
-  .icon{
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: white;
-  }
-  
   h2{ 
     text-transform: uppercase;
     color:#c0c5be;
     text-align: center;
     padding: 1rem;
-    margin-top: 20px;
-  }
-  
-  
-  
-  /* STACK SECTION*/
-  .stack-group {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 90px;
-    height: 25vh;
-  }
-  
-  /*chrome*/
-  .stack-title {
-    color: #eee;
-  }
-  .stack-progress::-webkit-progress-bar {
-    background-color: #eee;
-    border-radius: 100px;
-  }
-  
-  .stack-progress::-webkit-progress-value {
-    background-color: #d48166;
-    border-radius: 100px;
-  }
-  
-  /*firefox*/
-  .stack-progress::-moz-progress-bar {
-    background-color: #eee;
-    border-radius: 100px;
-  }
-  
-  /*IE10*/
-  .stack-progress {
-    color: #f9320a;
-    border-radius: 100px;
-  }
-  
-  .stack-progress-wrapper label {
-    display: block;
+    margin-top: 40px;
   }
   
   
   /* media query for small screen */
   @media only screen and (max-width: 1200px){
   #hero-wrapper{
-    height: 120vh;
+    height: 100vh;
   }
   
   .hero-wrapper-content{
@@ -228,45 +171,6 @@
   
   
   @media only screen and (max-width: 768px) {
-    .hamburger{
-      display: block;
-      cursor: pointer;
-      margin-right: 10px;
-    } 
-  
-    .hamburger.active .icon:nth-child(2){
-      opacity: 0;
-    }
-  
-    .hamburger.active .icon:nth-child(1){
-      transform: translateY(8px) rotate(45deg);
-    }
-  
-    .hamburger.active .icon:nth-child(3){
-      transform: translateY(-8px) rotate(-45deg);
-    }
-  
-    .Links{
-      position: fixed;
-      left:-110%;
-      top: 45px;
-      gap: 0;
-      flex-direction: column;
-      background-color:#373a36;
-      width: 93%;
-      color: white;
-      text-align: center;
-      transition: 0.3s;
-    }
-  
-    .nav-item{
-      margin: 16px 0;
-    }
-  
-    .Links.active{
-      left: 0;
-    }
-  
     #hero-wrapper {
       background-image: linear-gradient(
           rgba(0, 0, 0, 0.452),
@@ -278,12 +182,6 @@
       background-position: center center;
       height: 100vh;
     }
-  
-    .logo {
-      display:flex;
-      font-size: 20px;
-    }
-  
   
     .hero-wrapper-content {
       display: flex;
@@ -329,30 +227,6 @@
   
   
   @media only screen and (max-width: 480px) {
-    .hamburger {
-      display: block;
-      cursor: pointer;
-      margin-right: 10px;
-    }
-  
-    .Links{
-      position: fixed;
-      left:-130%;
-      top: 45px;
-      gap: 0;
-      flex-direction: column;
-      background-color:#373a36;
-      width: 90%;
-      color: white;
-      text-align: center;
-      transition: 0.3s;
-    }
-  
-  
-    .logo {
-      display: flex;
-    }
-  
     #hero-wrapper {
       background-image: linear-gradient(
           rgba(0, 0, 0, 0.452),

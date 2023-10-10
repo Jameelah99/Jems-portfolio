@@ -1,0 +1,79 @@
+/* hamburger */
+.hamburger{
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+  
+  /* menu icon */
+
+
+
+@media only screen and (max-width: 1200px) {
+    .hamburger{
+        display: none;
+    }
+    
+    
+}
+
+@media only screen and (max-width: 1024px) {
+    .hamburger{
+        display: none;
+    }
+    
+}
+
+
+@media only screen and (max-width: 768px){
+    .hamburger{
+        display: block;
+        cursor: pointer;
+        margin-right: 10px;
+    } 
+
+    .icon{
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: white;
+    }
+
+    .Links{
+        position: fixed;
+        left:8%;
+        gap: 0;
+        flex-direction: column;
+        background-color:#373a36;
+        width: 93%;
+        color: white;
+        text-align: center;
+        transition: 0.3s;
+    }
+    
+    .open .icon:nth-child(2){
+        opacity: 0;
+    }
+    
+    .open .icon:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    .open .icon:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+    
+}

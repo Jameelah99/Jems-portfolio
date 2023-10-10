@@ -9,7 +9,55 @@
     font-size: 23px;
     color: #ffff;
     padding: 17px;
-  }
+}
+
+
+/* STACK SECTION*/
+.stack-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    height: 25vh;
+}
+
+.stack-heading{
+    text-transform: uppercase;
+    color:#c0c5be;
+    text-align: center;
+    margin-top: 15rem;
+}
+  
+  /*chrome*/
+.stack-title {
+    color: #eee;
+}
+
+.stack-progress::-webkit-progress-bar {
+    background-color: #eee;
+    border-radius: 100px;
+}
+  
+.stack-progress::-webkit-progress-value {
+    background-color: #d48166;
+    border-radius: 100px;
+}
+  
+  /*firefox*/
+.stack-progress::-moz-progress-bar {
+    background-color: #eee;
+    border-radius: 100px;
+}
+  
+  /*IE10*/
+.stack-progress {
+    color: #f9320a;
+    border-radius: 100px;
+}
+  
+.stack-progress-wrapper label {
+    display: block;
+}
   
 
 

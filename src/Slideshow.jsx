@@ -16,13 +16,16 @@ import image68 from "./assets/Screenshot (68).png"
     
    const Slideshow = () => {
         const [currentIndex, setCurrentIndex] = useState(0);
+        const [currentTitle, setCurrentTitle] = useState(0)
     
         const nextSlide = () =>{
           setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+          setCurrentTitle((prevIndex) => (prevIndex + 1) % images.length);
         }
     
         const prevSlide = () => {
           setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length)
+          setCurrentTitle((prevIndex) => (prevIndex - 1 + images.length) % images.length)
         }
         setTimeout(Slideshow, 3000)
 
@@ -33,6 +36,16 @@ import image68 from "./assets/Screenshot (68).png"
             <img className='projectImages' src={images[currentIndex]} alt={`Slide ${currentIndex + 1}`} />
             <div className='nextAngle' onClick={nextSlide}><FontAwesomeIcon icon={faAngleRight}/></div>
           </div>
+
+          <div>
+             <span className="text">Interactive Card Details</span> <br />
+             <span className="text">Rolan Hotel Website Landing page </span> <br />
+             <span className="text">TiideHr(an advance employee management system)JS version <br /> Employee Dashboard</span>
+             <span className="text">TiideHr JS version <br /> Role management page</span>
+             <span className="text">TiideHr React version <br /> Landing page</span>
+             <span className="text">TiideHr React version <br /> Employee Dashboard</span>
+             <span className="text">TiideHr React version <br /> Role management page</span>
+           </div>
           </>
         )
     }
