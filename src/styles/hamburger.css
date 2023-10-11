@@ -11,22 +11,6 @@
 
 
 
-@media only screen and (max-width: 1200px) {
-    .hamburger{
-        display: none;
-    }
-    
-    
-}
-
-@media only screen and (max-width: 1024px) {
-    .hamburger{
-        display: none;
-    }
-    
-}
-
-
 @media only screen and (max-width: 768px){
     .hamburger{
         display: block;
@@ -43,6 +27,7 @@
         transition: all 0.3s ease-in-out;
         background-color: white;
     }
+
 
     .Links{
         position: fixed;

@@ -21,12 +21,12 @@ function Hamburger() {
               <span className="icon"></span>
            </button>
 
-          <ul className={`Links ${isOpen ? '' : 'icon'}`} >
-            <li className="nav-item"><Link to={'/'} className="navlink"> Home </Link></li>
-            <li className="nav-item"> <Link to={'/about'} className="navlink"> About </Link></li>
-            <li className="nav-item"><Link to={'/project'} className="navlink"> Project </Link></li>
-            <li className="nav-item"> <Link to={'/contact'} className="navlink"> Contact </Link></li>
-          </ul>
+            <ul className={`Links ${isOpen ? '' : 'icon'}`} >
+              <li className="nav-item"><Link to={'/'} className="navlink"> Home </Link></li>
+              <li className="nav-item"> <Link to={'/about'} className="navlink"> About </Link></li>
+              <li className="nav-item"><Link to={'/project'} className="navlink"> Project </Link></li>
+              <li className="nav-item"> <Link to={'/contact'} className="navlink"> Contact </Link></li>
+            </ul>
         </div>
     </>
   )

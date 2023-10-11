@@ -42,7 +42,7 @@ a {
   color: #ffff;
   font-size: 30px;
   font-weight: bold;
-  transition: 0.5s; /*makes content blink */
+  transition: 0.5s; /* makes content blink */
 }
 
 .navlink:hover {
