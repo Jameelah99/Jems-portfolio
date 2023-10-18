@@ -12,7 +12,12 @@
 }
 
 .projectImages{
-    margin: 70px;
+    margin: 15px 70px;
     width: 60%;
+}
+
+.text{
+    text-align: center;
+    font-size: 20px;
 }
 

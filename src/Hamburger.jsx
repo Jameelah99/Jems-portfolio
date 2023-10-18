@@ -9,7 +9,6 @@ function Hamburger() {
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
-    console.log("open");
   };
 
   return (
