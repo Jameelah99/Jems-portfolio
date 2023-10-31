@@ -28,10 +28,10 @@ a{
     margin-top: 100px;
   }
   
-  .social-account-wrapper svg {
+  .fontIcon{
     width: 75px;
     height: 75px;
-    fill: #d48166; /* either use color or fill*/
+    color: #d48166; /* either use color or fill*/
   }
   
   .social-account-wrapper svg:hover {
@@ -44,18 +44,15 @@ a{
   
 
 @media only screen and (max-width: 1100px){
-.connect-with-me{
-    height: 50vh;
-}
     
 .social-account-wrapper{
     margin-top: 10rem;
     gap: 90px;
 }
 
-.social-account-wrapper svg {
-    width: 70px;
-    height: 70px;
+.fontIcon{
+    width: 65px;
+    height: 65px;
     fill: #d48166; /* either use color or fill*/
 }
 
@@ -63,4 +60,40 @@ a{
     font-size: 20px;
 }
 
+}
+
+@media only screen and (max-width: 768px){
+    .social-account-wrapper{
+        margin-top: 10rem;
+        gap: 70px;
+    }
+    
+    .fontIcon{
+        width: 55px;
+        height: 55px;
+        fill: #d48166; /* either use color or fill*/
+    }
+    
+    .sMedia{
+        font-size: 15px;
+    }
+    
+}
+
+@media only screen and (max-width: 480px){
+    .social-account-wrapper{
+        margin-top: 11rem;
+        gap: 30px;
+    }
+    
+    .fontIcon{
+        width: 35px;
+        height: 35px;
+        fill: #d48166; /* either use color or fill*/
+    }
+    
+    .sMedia{
+        font-size: 10px;
+    }
+    
 }

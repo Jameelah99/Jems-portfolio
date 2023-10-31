@@ -61,11 +61,11 @@
   }
   
   /*icons*/
-  .hero-media-wrapper a svg {
+  .fontLandingIcon {
     width: 50px;
     height: 50px;
     text-decoration: none;
-    fill: #e6e2dd;
+    color: #e6e2dd;
     border: 1px solid #e6e2dd;
     border-radius: 50%;
     padding: 4px;

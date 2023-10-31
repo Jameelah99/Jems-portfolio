@@ -14,10 +14,9 @@ function Hamburger() {
   return (
     <>
       <div
-        className={`hamburger-menu ${isOpen ? "open" : ""}`}
-        onClick={toggleMenu}
+        className={`hamburger-menu ${isOpen ? "open" : ""}`} 
       >
-        <button className="hamburger" >
+        <button className="hamburger" onClick={toggleMenu}>
         {isOpen ? (
           <FontAwesomeIcon icon={faBars} size={'2x'} color={'white'}/>
         ) : (
