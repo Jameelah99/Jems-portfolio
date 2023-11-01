@@ -32,7 +32,7 @@ function Landingpage() {
       </Link>
     </section>
     <section className="hero-btns-wrapper">
-      <Link to="https://drive.google.com/file/d/11x2p9X3YKLppa8hi1qa4U-q7HRXqZtdd/view?usp=drivesdk" target="_blank"> <button className="btn download-btn">Download CV</button> </Link> 
+      <Link to="https://drive.google.com/file/d/1BjrrNYWXCYsBkl91BCTUqXyjynbTuqMx/view?usp=drivesdk" target="_blank"> <button className="btn download-btn">Download CV</button> </Link> 
     </section>
   </section>
 </section>

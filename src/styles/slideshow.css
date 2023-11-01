@@ -37,7 +37,7 @@
     
 @media only screen and (max-width: 768px) {    
     .slideshow{
-        max-width:500px ;
+        /* max-width:1000px ; */
         margin-top: 1rem;
         left: 18%;
     }
@@ -60,15 +60,24 @@
     
 @media only screen and (max-width: 480px) {
     .slideshow{
-        max-width: 310px;
-        margin-top: 3rem;
-        left: 16%;
+        /* max-width: 500px; */
+        margin-top: 4rem;
+        left: 19%;
     }
 
     .projectImages{
-        margin: 20px 40px;
+        margin: 20px 8px;
     }
-    
+
+    .prevAngle{
+        margin-bottom: -25rem;
+        margin-left: 10rem;
+    }
+
+    .nextAngle{
+        margin-bottom: -25rem;
+        margin-right: 10rem;
+    }
     
     h2{
         font-size: 14px;
