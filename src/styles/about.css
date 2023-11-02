@@ -26,6 +26,7 @@
     color:#c0c5be;
     text-align: center;
     margin-top: 15rem;
+    font-size: 25px;
 }
   
   /*chrome*/
@@ -80,12 +81,20 @@
 @media only screen and (max-width: 480px){
 .about-brief {
     line-height: 2.5;
-    font-size: 20px;
-    padding: 10px;
+    font-size: 17px;
+    padding: 15px;
 }
 
-h2{
-    font-size: 20px;
+h3{
+    font-size: 15px;
+}
+
+.stack-group{
+    display: block;
+}
+
+#stack3{
+    margin-top: 3rem;
 }
 
 }

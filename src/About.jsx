@@ -20,7 +20,7 @@ function About (){
 
   {/* STACK SECTION */}
        <section className="stack-section" id="staack">
-          <h3 className="stack-heading"> stack </h3>
+          <h3 className="stack-heading"> stacks </h3>
           <section className="stack-group">
             <div className="stack-progress-wrapper" id="stack3">
               <label for="html-progress" className="stack-title"> HTML:</label>
