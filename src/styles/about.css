@@ -75,6 +75,10 @@
     font-size: 19px;
     padding: 20px;
 }
+
+.stack-heading, .about{
+    font-size: 17px;
+}
 }
 
 
@@ -85,8 +89,8 @@
     padding: 15px;
 }
 
-h3{
-    font-size: 15px;
+.stack-heading, .about{
+    font-size: 20px;
 }
 
 .stack-group{
