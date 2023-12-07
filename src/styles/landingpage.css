@@ -212,16 +212,6 @@
       font-size: 20px;
     }
   
-    
-    .stack-progress {
-      width: 95%;
-    }
-  
-    .stack-group {
-      gap: 70px;
-      /* margin-bottom: 20px; */
-    }
-  
   }
   
   
@@ -269,21 +259,6 @@
   
     h2 {
       font-size: 15px;
-    }
-  
-    
-    .stack-progress {
-      width: 60%;
-    }
-  
-    .stack-group {
-      display: block;
-      line-height: 2;
-      margin-left: 7rem;
-    }
-  
-    .stack-section{
-      height: 50vh;
     }
   }
   

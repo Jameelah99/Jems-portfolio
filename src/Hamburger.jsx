@@ -11,6 +11,11 @@ function Hamburger() {
     setIsOpen(!isOpen);
   };
 
+  // const closeMenu = () => {
+  //   setIsOpen(false);
+  //   console.log('its working')
+  // };
+
   return (
     <>
       <div
@@ -24,7 +29,7 @@ function Hamburger() {
         )}
         </button>
 
-        <ul className={`Links ${isOpen ? "icon" : ""}`}>
+        <ul className={`Links ${isOpen ? "icon" : ""}`} >
           <li className="nav-item">
             <Link to={"/"} className="navlink">
               Home

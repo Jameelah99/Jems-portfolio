@@ -1,6 +1,6 @@
 .about-body{
     background-color: dimgray;
-    height: 90vh;
+    height: 100vh;
 }
 
 .about-brief {
@@ -17,8 +17,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 90px;
-    height: 25vh;
+    gap: 9rem;
+    margin-top: 3rem;
+    /* height: 50vh; */
 }
 
 .stack-heading{
@@ -67,6 +68,12 @@
 .about-brief{
     font-size: 25px;
 }
+
+.stack-group{
+    display: flex;
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
 }
 
 @media only screen and (max-width: 768px) {
@@ -78,6 +85,16 @@
 
 .stack-heading, .about{
     font-size: 17px;
+}
+
+.stack-group{
+    display: block;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+#stack1, #stack2, #stack3, #stack4{
+    margin-top: 2rem;
 }
 }
 
@@ -95,10 +112,12 @@
 
 .stack-group{
     display: block;
+    text-align: center;
+    margin-top: 3rem;
 }
 
-#stack3{
-    margin-top: 3rem;
+#stack1, #stack2, #stack3, #stack4{
+    margin-top: 2rem;
 }
 
 }

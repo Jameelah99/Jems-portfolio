@@ -12,18 +12,7 @@
         display: block;
         cursor: pointer;
         margin-right: 10px;
-    } 
-
-    .icon{
-        display: block;
-        width: 25px;
-        height: 3px;
-        margin: 5px auto;
-        -webkit-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out;
-        background-color: white;
     }
-
 
     .Links{
         position: fixed;
@@ -36,18 +25,15 @@
         text-align: center;
         transition: 0.3s;
     }
+
+    .Links.close{
+        display: none;
+    }
     
-    .open .icon:nth-child(2){
+    .open .icon{
         opacity: 0;
     }
-    
-    .open .icon:nth-child(1){
-        transform: translateY(8px) rotate(45deg);
-    }
-    
-    .open .icon:nth-child(3){
-        transform: translateY(-8px) rotate(-45deg);
-    }
+
 }
 
 @media only screen and (max-width: 480px){
