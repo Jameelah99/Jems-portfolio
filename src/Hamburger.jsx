@@ -19,17 +19,18 @@ function Hamburger() {
   return (
     <>
       <div
-        className={`hamburger-menu ${isOpen ? "open" : ""}`} 
+        className='hamburger-menu' 
       >
-        <button className="hamburger" onClick={toggleMenu}>
+        <button className={`hamburger ${isOpen ? "open" : ""}`} onClick={toggleMenu}>
         {isOpen ? (
-          <FontAwesomeIcon icon={faBars} size={'2x'} color={'white'}/>
-        ) : (
           <FontAwesomeIcon icon={faXmark} size={'2x'} color={'white'}/>
+          ) : (
+          <FontAwesomeIcon icon={faBars} size={'2x'} color={'white'}/>
         )}
         </button>
 
-        <ul className={`Links ${isOpen ? "icon" : ""}`} >
+        <nav className={`nav-container ${isOpen ? "open" : ""}`}>
+          <ul className='Links' >
           <li className="nav-item">
             <Link to={"/"} className="navlink">
               Home
@@ -51,6 +52,7 @@ function Hamburger() {
             </Link>
           </li>
         </ul>
+        </nav>
       </div>
     </>
   );
