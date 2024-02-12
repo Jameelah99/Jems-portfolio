@@ -11,17 +11,12 @@ function Hamburger() {
     setIsOpen(!isOpen);
   };
 
-  // const closeMenu = () => {
-  //   setIsOpen(false);
-  //   console.log('its working')
-  // };
-
   return (
     <>
       <div
         className='hamburger-menu' 
       >
-        <button className={`hamburger ${isOpen ? "open" : ""}`} onClick={toggleMenu}>
+        <button className='hamburger' onClick={toggleMenu}>
         {isOpen ? (
           <FontAwesomeIcon icon={faXmark} size={'2x'} color={'white'}/>
           ) : (

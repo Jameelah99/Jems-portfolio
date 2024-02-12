@@ -16,14 +16,6 @@
 
     .Links{
         display: none;
-        list-style-type: none;
-    }
-
-    a{
-        color: white;
-        text-decoration: none;
-        padding: 0.5rem;
-        font-size: 15px;
     }
     
     .open ul{
@@ -36,34 +28,4 @@
         transition: 0.3s;
     }
 
-}
-
-@media only screen and (max-width: 480px){
-    .hamburger {
-        display: block;
-        cursor: pointer;
-        margin-right: 10px;
-    }
-
-    .Links{
-        display: none;
-        list-style-type: none;
-    }
-
-    a{
-        color: white;
-        text-decoration: none;
-        padding: 0.5rem;
-        font-size: 15px;
-    }
-    
-    .open ul{
-        display: block;
-        position: absolute;
-        top: 3rem;
-        right: -3rem; 
-        padding: 0 3rem;
-        background-color: #373a36;
-    }
-    
 }

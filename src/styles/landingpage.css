@@ -62,13 +62,13 @@
   
   /*icons*/
   .fontLandingIcon {
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     text-decoration: none;
     color: #e6e2dd;
     border: 1px solid #e6e2dd;
     border-radius: 50%;
-    padding: 4px;
+    padding: 7px;
     margin: 15px;
     transition: 0.5s;
   }

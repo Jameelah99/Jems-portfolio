@@ -26,9 +26,6 @@ li {
   list-style: none;
 }
 
-a {
-  text-decoration: none;
-}
 
 .Links {
   display: flex;
@@ -51,15 +48,6 @@ a {
 
 
 @media only screen and (max-width: 768px) {
-
-  .nav-item{
-    margin: 10px 0;
-  }
-
-  .Links.active{
-    left: 0;
-  }
-
   .logo {
     display:flex;
     font-size: 20px;
@@ -69,20 +57,6 @@ a {
 }
 
 @media only screen and (max-width: 480px) {
-  .Links{
-    position: fixed;
-    left:-130%;
-    top: 45px;
-    gap: 0;
-    flex-direction: column;
-    background-color:#373a36;
-    width: 90%;
-    color: white;
-    text-align: center;
-    transition: 0.3s;
-  }
-
-
   .logo {
     display: flex;
     margin-left: 25px;
